@@ -4,12 +4,16 @@
 Created a multi-step form wizard in NextJS that guides the user through several steps, collecting information at each step and validating user input before proceeding to the next step. 
 The form include dynamic page tracking at the top to indicate the current step/page number. 
 
-Pointers to maintain in code:
+### Pointers to maintain in code:
 1. Step Components
 2. Navigation
 3. Validation of fields with error fields
 4. Config driven if feasible
 
+### Buttons 
+- Button "Back" takes you to previous page
+- Button "Next" takes you to next page
+  
 ### Step 1
 
 ![image](https://github.com/RuchiDhamecha/NextJS-MultiStepFormWizard/assets/87808663/ba79c27c-455e-465b-a0a6-17fb5260e3fe)
@@ -25,6 +29,7 @@ After validating Name input
 After validating email input
 
 ![image](https://github.com/RuchiDhamecha/NextJS-MultiStepFormWizard/assets/87808663/b687b5cd-49f7-47ff-888d-bcd974da9437)
+
 
 ### Step 3 
 
