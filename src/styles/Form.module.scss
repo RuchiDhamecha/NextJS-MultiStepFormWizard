@@ -1,8 +1,25 @@
-.form {
+.Form {
     padding: 20px;
+
+    .Navbar{
+      display: flex;
+      justify-content: center;
+      color: blueviolet;
+      text-decoration: underline;
+      text-underline-offset: 0.5rem;
+    }
+    .Submitted{
+      color: grey;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+
+    }
+    .Steps {
+      margin-bottom: 2rem;
+      font-weight: bold;
+      color: rgb(99, 19, 174);
+    }
   }
   
-  .steps {
-    margin-bottom: 20px;
-    font-weight: bold;
-  }

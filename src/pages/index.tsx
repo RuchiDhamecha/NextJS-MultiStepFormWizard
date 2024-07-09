@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Step1 from '../components/step1/Step1';
 import Step2 from '../components/step2/Step2';
 import Step3 from '../components/step3/Step3';
-import styles from '../styles/Form.module.scss';
+import styles from '../styles/form.module.scss';
 import { FormData } from '../components/form.types';
 
 const Form = () => {
@@ -25,10 +25,13 @@ const Form = () => {
   };
 
   return (
-    <div className={styles.form}>
-      <div className={styles.steps}>
+    <section className={styles.Form}>
+      <nav className={styles.Navbar}>
+        <h3>MultiStep Form Wizard</h3>
+      </nav>
+      <p className={styles.Steps}>
         Step {step} of 3
-      </div>
+      </p>
       {!isSubmitted ? (
         <>
           {step === 1 && <Step1 onNext={handleNextStep} />}
@@ -36,12 +39,14 @@ const Form = () => {
           {step === 3 && <Step3 onSubmit={handleSubmit} onBack={handlePrevStep} />}
         </>
       ) : (
-        <div className={styles.submitted}>
+        <div className={styles.Submitted}>
           <p>Form submitted</p>
-          <button onClick={() => { setStep(1); setFormData({}); setIsSubmitted(false); }}>Fill again</button>
+          <div>
+            <button onClick={() => { setStep(1); setFormData({}); setIsSubmitted(false); }}>Fill again</button>
+          </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 

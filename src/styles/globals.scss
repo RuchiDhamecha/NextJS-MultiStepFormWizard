@@ -3,4 +3,31 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    button{
+        background-color: rgb(227, 203, 248);
+        color: blueviolet;
+        padding: 0.5rem 0.75rem;
+        cursor: pointer;
+        border: none;
+        margin: 0.75rem 0.25rem;
+        border-radius: 4px;
+
+        &:active{
+            position: relative;
+            top: 4px;
+            left: 4px;
+        }
+    }
+    input{
+        padding: 0.25rem;
+        margin: 0 0.5rem;
+        background-color: rgb(244, 223, 238);
+        border-radius: 4px;
+        border: 1px solid grey;
+    }
+    // .Error{
+    //     color: red;
+    //     font-size: small;
+    // }
+
   }

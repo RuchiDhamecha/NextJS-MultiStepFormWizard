@@ -1,4 +1,3 @@
-// src/components/Step2/Step2.tsx
 import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -22,11 +21,14 @@ const Step2 = ({ onNext, onBack }:Step2Props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.step2}>
+    <form onSubmit={handleSubmit(onSubmit)} className={styles.Step2}>
       <div>
         <label>Email</label>
         <input {...register('email')} />
+        <div className={styles.Error}>
         {errors.email && <p>{errors.email.message as string}</p>}
+        </div>
+       
       </div>
       <button type="button" onClick={onBack}>Back</button>
       <button type="submit">Next</button>
