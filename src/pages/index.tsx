@@ -1,4 +1,3 @@
-// src/pages/index.tsx
 import React, { useState } from 'react';
 import Step1 from '../components/step1/Step1';
 import Step2 from '../components/step2/Step2';
